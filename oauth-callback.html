@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>TikTok OAuth Callback</title>
+</head>
+<body>
+  <h2>TikTok OAuth Callback ✅</h2>
+  <p id="out"></p>
+  <script>
+    const u = new URL(window.location.href);
+    document.getElementById("out").innerText =
+      "code=" + (u.searchParams.get("code") || "") +
+      " | state=" + (u.searchParams.get("state") || "");
+  </script>
+</body>
+</html>
